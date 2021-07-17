@@ -9,5 +9,32 @@ tweet object instances _behave_ as expected.
 */
 
 class Tweet {
-
+  constructor (author, content, timeStamp, numberOfLikes, comments) {
+    this.author = author;
+    this.content = content;
+    this.timeStamp = timeStamp;
+    this.numberOfLikes = numberOfLikes;
+    this.comments = comments;
+  }
+  increaseLikes(newLikes) {
+    this.numberOfLikes = this.numberOfLikes + newLikes;
+  }
+  addComment(newComment) {
+    this.comments.push(newComment);
+  }
 };
+
+var tweetOne = new Tweet("John", "First Tweet Ever", "03:10, 07/15/20", 2, ["So cool", "Welcome"]);
+var tweetTwo = new Tweet("Sarah", "Found an amazing new biking trail: SailAlong", "14:30, 07/16/20", 17, ["I've riden there and love it!"]);
+var tweetThree = new Tweet("Ted", "Check out this article from The New Food Economy", "10:24, 07/16/20", 120, ["Wow!", "This is really inspiring.", "Love this! 🔥", "Thanks for sharing."]);
+
+console.log(tweetOne);
+console.log(tweetTwo);
+console.log(tweetThree);
+
+tweetTwo.increaseLikes(30);
+tweetThree.addComment("I question the last two points...");
+
+console.log(tweetOne);
+console.log(tweetTwo);
+console.log(tweetThree);
