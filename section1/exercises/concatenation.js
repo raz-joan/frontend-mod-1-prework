@@ -50,12 +50,12 @@ console.log(longRun);
 // Declare three variables, name/content/data type of your choice. Think carefully about what
   // you name the variables. Remember, the goal is to be concise but descriptive (it's a hard balance!)
   // Then, log out ONE sentence that incorporates all THREE variables.
-var fourteeners = 58;
-var hikesUpNext = "Greys and Torres";
+var NumOfFourteeners = 58;
+var hikeUpNext = "Greys and Torres";
 var desireToHike = true;
 
-var fourteenerGoals = "There are " + fourteeners + " 14ers in Colorado. It is " + desireToHike + " that I want to hike " + hikesUpNext + ".";
-console.log(fourteenerGoals);
+var fourteenerGoal = "There are " + NumOfFourteeners + " 14ers in Colorado. It is " + desireToHike + " that I want to hike " + hikeUpNext + ".";
+console.log(fourteenerGoal);
 //-------------------
 // FINAL CHECK
 //-------------------

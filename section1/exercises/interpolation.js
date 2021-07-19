@@ -23,11 +23,11 @@ console.log( `My zoo has ${numberOfCreatures} ${creatures}!`);
 
 // YOU DO: What data type will be logged to the console as a result of line 22? Explain.
 // Your answer and explanation here:
-/* 'My zoo has 7 unicorns!' will be logged to the console. When the computer
-    reads the backtick to open the statment in console.log it will expect interpolation.
+/* The string, 'My zoo has 7 unicorns!', will be logged to the console. When the computer
+    reads the backtick to open the string it will expect interpolation.
     When the dollar sign is read it will search for the variable inside the curly brackets
-    to substitute in. This can occur any number of times until the second back tick
-    ends the interpolation. */
+    to substitute in the value held by the variable. This can occur any number of times
+    until the second back tick ends the interpolation. */
 
 // YOU DO:
 // Write code that combines the variables below into a string that

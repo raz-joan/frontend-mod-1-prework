@@ -24,7 +24,7 @@ console.log('Welcome to Turing!');
 console.log('99 bottles of pop on the all...');
 
 // YOU DO: Write code below to log one line from your favorite song or movie:
-console.log("I got a picture of you holding a picture of me in the pocket of my bluejeans.")
+console.log("I got a picture of you holding a picture of me in the pocket of my bluejeans.");
 
 
 //-------------------
@@ -60,7 +60,7 @@ console.log(7 > 2);
 // YOU DO: log to the console the result of "hello" is equal to "Hello":
 console.log("hello" === "Hello");
 // YOU DO: log to the console the result of 3 is not equal to 4:
-console.log(3 != 4);
+console.log(3 !== 4);
 // YOU DO: log to the console the result of 4 is less than or equal to 5:
 console.log(4 <= 5);
 
@@ -70,4 +70,4 @@ console.log(4 <= 5);
 //-------------------
 
 // Did you run this file in your terminal to make sure everything printed out to the console
-// as you would expect?
+// as you would expect? YES!
