@@ -132,8 +132,6 @@ forestMan.gainPower(50);
 console.log(forestMan);
 
 
-//finished coding in 27 minutes. Checked in the terminal and corrected mistake just in time of 30min.
-
 /* Reflection
 
 // What parts were most difficult about this exerise?
