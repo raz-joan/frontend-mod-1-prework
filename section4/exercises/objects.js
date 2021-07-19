@@ -126,7 +126,7 @@ good to have some exposure before going into Mod 1.
 // key-value pairs you used in your email Object above.
 // Then, log the email Array to the console.
 
-var emailInfo = [
+var emails = [
 {
   sender: "Moxie Bread Co",
   subject: "Weekly Update from the Bakery",
@@ -156,4 +156,4 @@ var emailInfo = [
 }
 ];
 
-console.log(emailInfo);
+console.log(emails);
