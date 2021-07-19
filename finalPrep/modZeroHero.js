@@ -80,7 +80,7 @@ var scaryMonster = {
     number: 111,
     street: "Lake Bottom",
     state: "Scotland",
-    zip: 01234
+    zip: 12345
   }
 }
 
