@@ -74,16 +74,16 @@ console.log("Is numberStudents less than or equal to 21?", numberStudents <= 21)
 
 console.log(4 < 9);
 //YOU DO: Explain.
-/* The above line of code is printing to the terminal the answer to the question: is 4 les than 9?
+/* The above line of code is printing to the terminal the answer to the question: is 4 less than 9?
 The answer to the question is 'true', which is also the word that will be printed in the terminal. */
 
 var books = 3;
 console.log(4 < books);
 // YOU DO: Explain.
 /* The first line of code declares the variable 'books' and assigns it the number value of 3.
-The second line of code commands the computer to execute the comparison: is 4 less than 'books',
-which holds the number 3. The answer to this question is false, as 4 > 3, so 'false' will be printed
-to the terminal. */
+The second line of code tells the interpreter to print to the console the answer to the
+comparison: is 4 less than 'books'?, which holds the number 3. The answer to this question is
+false, as 4 > 3, so 'false' will be printed to the terminal. */
 
 var friends = 6;
 var siblings = 2;
@@ -91,7 +91,7 @@ console.log(friends > siblings);
 // YOU DO: Explain.
 /* The first line of code declares the variable 'friends' and assigns it the number 6.
 The second line of code declares the variable 'siblings' and assigns is the number 2.
-The third line of code tells the computer to print to the terminal the answer to the
+The third line of code tells the interpreter to print to the terminal the answer to the
 question: is 'friends' greater than 'siblings', which is the same as is 6 greater than 2?
 The answer is 'true', which is what will print in the terminal. */
 
@@ -145,7 +145,7 @@ console.log(dog && lovesToPlay);
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
 
-/* ANSWER: I expected the answer to be true, as lovesToPlay = true and age = 1 (which
+/* ANSWER: I expected the answer to be true, as 'lovesToPlay = true' and 'age = 1' (which
 is converted to true for boolean/number conversion). And, two true operands evaluate to
 true with the && comparison operator. However, it actually evaluated to '1'.
 This was surprising to me, however I read more about the AND '&&' operator with

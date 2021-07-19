@@ -41,7 +41,8 @@ Questions
 
 Between lines 14 and 18 is an 'if...else statement'. The condition is asking if the variable
 doorChoice is strictly equal to 1. If this evaluates to true, then the following code block runs.
-Otherwise, the code block following 'else' will run instead.
+Otherwise, the code block following 'else' will run instead. More generally, this code allows for
+the doorChoice number value to determine if the bearClothing is "hat" or "scarf".
 
 2. What variable has a new value assigned to it after the first if statement executes?
 
@@ -59,7 +60,9 @@ by checking the first conditional. If true, then the following code block will r
 If false, then the computer will move on the second conditional. If true, then the
 following code block will run. If false, then the computer will move to the third conditional.
 If true, then the following code block will run. If false, then the computer will move to the
-final else statement and run that code block. Only a single option will execute!
+final else statement and run that code block. Only a single option will execute! More generally,
+If the bearChoice is strictly 1, 2, 3, or something else, then the script says to print a different
+message (string) to the console.
 
 5. If you changed the variable bearChoice to equal 3, what will be the final outcome be?
 
@@ -75,7 +78,7 @@ then the final string printed to the terminal will read:
 7. What is your favorite ending?
 
 My favorite ending is the final else option, such the the variable bearChoice was strictly
-not equal to 1, 2, or 3, in which the string printed to the termial reads:
-"You stay with the bear and become it's best friend!".
+not equal to 1, 2, or 3, in which case, the interpreter is forced to run the final else code block and
+the string printed to the termial reads: "You stay with the bear and become it's best friend!".
 
 */

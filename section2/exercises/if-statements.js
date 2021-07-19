@@ -77,7 +77,7 @@ if (numQuarters >= 2) {
   console.log("I don't have enough money for a gumball");
 };
 
-// just wanting to practice writing code ...
+// just wanting to practice writing code ... it's much less concise! yuck :)
 
 if (numQuarters === 0) {
   console.log("I don't have enough money for a gumball");
