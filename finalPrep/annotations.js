@@ -3,28 +3,28 @@
 
 //Build a Bear
 function buildABear(name, age, fur, clothes, specialPower) {
-// function declaration 'buildABear' with arguments: name, age, fur, clothes, specialPower
+// function declaration 'buildABear' with parameters: name, age, fur, clothes, specialPower
   var greeting = `Hey partner! My name is ${name} - will you be my friend?!`;
-// string variable that interpolates the argument "name"
+// string variable that interpolates the parameter "name"
   var demographics = [name, age];
-// array variable that stores the first two arguments "name" and "age"
+// array variable that stores the first two parameters "name" and "age"
   var powerSaying = "Did you know that I can " + specialPower + " ?";
-// string variable that uses concatenation to include the argument "specialPower"
+// string variable that uses concatenation to include the parameter "specialPower"
   var builtBear = {
 // object literal declaration called builtBear
     basicInfo: demographics,
 // the key basicInfo is paired with the array variable 'demographics'
     clothes: clothes,
-// the key clothes is paired with the function argument "clothes"
+// the key clothes is paired with the function parameter "clothes"
     exterior: fur,
-// the exterior key is paired with the function argument fur
+// the exterior key is paired with the function parameter fur
     cost: 49.99,
 // this is a static key-value pair, such that the value is assigned a number
     sayings: [greeting, powerSaying, "Goodnight my friend!"],
 // the key sayings is paired with an array that contains two previously defined
-// string variables, "greeting" and "powerSaying" and a new string: "Goodnight my friend!".
+// string variables, "greeting" and "powerSaying", and a new string: "Goodnight my friend!".
     isCuddly: true,
-// this is a static key-value pair, such that isCuddyly holds a boolean value
+// this is a static key-value pair, such that isCuddly is a assigned a boolean value
   };
   console.log(builtBear);
 // I added in this console.log, so that I could see the object literal & check that I understood
@@ -34,8 +34,8 @@ function buildABear(name, age, fur, clothes, specialPower) {
 }
 
 buildABear('Fluffy', 4, 'brown', ['pants', 'jorts', 'tanktop'], 'give you nightmares');
-// the function buildABear is being called with string, number, and array parameters.
-// the function will place the parameters with the corresponding arguments in order to
+// the function buildABear is being called with string, number, and array arguments.
+// the function will place the arguments with the corresponding parameters in order to
 // return the object 'builtBear'
 // should return:
 // builtBear {basicInfo: ["Fluffy", 4], clothes: ['pants', 'jorts', 'tanktop'], exterior: "brown",
@@ -43,8 +43,8 @@ buildABear('Fluffy', 4, 'brown', ['pants', 'jorts', 'tanktop'], 'give you nightm
 // that I can give you nightmares?", "Goodnight my friend!"], isCuddly: true }
 
 buildABear('Sleepy', 2, 'purple', ['pajamas', 'sleeping cap'], 'sleeping in');
-// the function buildABear is being called with string, number, and array parameters.
-// the function will place the parameters with the corresponding arguments in order to
+// the function buildABear is being called with string, number, and array arguments.
+// the function will place the arguments with the corresponding parameters in order to
 // return the object 'builtBear'
 // should return:
 // builtBear {basicInfo: ["Sleepy", 2], clothes: ['pajamas', 'sleeping cap'], exterior: "purple",
@@ -56,14 +56,15 @@ buildABear('Sleepy', 2, 'purple', ['pajamas', 'sleeping cap'], 'sleeping in');
 function fizzBuzz(num1, num2, range) {
 // the above line declares the function "fizzBuzz" with three parameters: "num1", "num2", and "range"
   for (var i = 0; i <= range; i++) {
-// this is a for loop such that the counter is initialized at 0, with the condition that i will be
+// this is a for loop such that the counter is initialized at 0, with the condition that 'i' will be
 // incremented until the parameter number that matches the range argument is reached, and each loop
 // the counter is incremented by 1. So, it will count 0, 1, 2, 3, ..., 'range'.
     if (i % num1 === 0 && i % num2 === 0) {
 // an if structure is nested within the for loop. this first condition uses the AND operator, which says
 // that if BOTH conditions are true then the following code in curly braces should run. The two conditions
 // are 'if i modulo num1 is stricly 0' and 'if i modulo num2 is stricly 0', meaning 'if i divides into both
-// num1 and num2 with a remainder of 0, then follow this path
+// num1 and num2 with a remainder of 0, then follow this path and execute the following code block, else
+// move on to the next condition.
       console.log('fizzbuzz');
 // the code block for the first condition says to print the string: 'fizzbuzz'
     } else if (i % num1 === 0) {

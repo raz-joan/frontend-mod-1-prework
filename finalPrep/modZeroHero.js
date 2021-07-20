@@ -23,7 +23,7 @@ var identityConcealed = true;
 // Declare two variables - archEnemies AND sidekicks
 //   archEnemies should be an array of at least 3 different enemy strings
 //   sidekicks should be an array of at least 3 different sidekick strings
-var archEnemies = ["Tree guy", "Water woman", "Animal friend"];
+var archEnemies = ["Tree Guy", "Water Woman", "Animal Friend"];
 var sidekicks = ["Raincloud", "Lightning", "Sun", "Moon"];
 // Print the first sidekick to your console
 console.log(sidekicks[0]);
@@ -46,9 +46,9 @@ console.log(sidekicks);
 //   - Danger levels that are above 50 are too scary for your hero. Any danger level that is above 50 should result in printing the badExcuse to the console
 //   - Anything dangerLevel that is between 10 and 50 should result in printing the saveTheDay string to the console
 //   - If the dangerLevel is below 10, it means it is not worth your time and should result in printing the string "Meh. Hard pass." to the console.
-function assessSituation (dangerLevel, saveTheDay, badExcuse) {
+function assessSituation(dangerLevel, saveTheDay, badExcuse) {
   if (dangerLevel < 10) {
-    console.log("Meh. Hard pass.")
+    console.log("Meh. Hard pass.");
   } else if (dangerLevel <= 50) {
     console.log(saveTheDay);
   } else {
@@ -57,11 +57,16 @@ function assessSituation (dangerLevel, saveTheDay, badExcuse) {
 }
 //Test Cases
 var announcement = `Never fear, the Courageous ${heroName} is here!`;
-var excuse = 'I think I forgot to lock up my 1992 Toyota Coralla. Be right back.';
+var excuse = 'I think I forgot to lock up my 1992 Toyota Corolla. Be right back.';
 
 assessSituation(99, announcement, excuse); // Should print - 'I think I forgot to lock up my 1992 Toyota Coralla. Be right back.'
 assessSituation(21, announcement, excuse); // should print - 'Never fear, the Courageous Curly Bracket is here!'
 assessSituation(3, announcement, excuse); // should print - "Meh. Hard pass."
+// check the edge cases ...
+assessSituation(-1, announcement, excuse); // should print - 'Meh. Hard pass'
+assessSituation(0, announcement, excuse); // should print - 'Meh. Hard pass'
+assessSituation(10, announcement, excuse); // should print - "Never fear, the Courageous Thunderbolt is here!"
+assessSituation(50, announcement, excuse); // should print - "Never fear, the Courageous Thunderbolt is here!"
 
 // Declare a new variable - scaryMonster - assigned to an Object with the following key/values
 //   - name (string)
@@ -111,10 +116,10 @@ class SuperHero {
   sayName() {
     console.log(this.superHeroName);
   }
-  maximizeEnergy () {
+  maximizeEnergy() {
     this.energyLevel = 1000;
   }
-  gainPower (newPower) {
+  gainPower(newPower) {
     this.powerLevel = this.powerLevel + newPower;
   }
 }
@@ -125,6 +130,7 @@ var forestMan = new SuperHero("Forest Man", "climbing trees", 50);
 console.log(seaMermaid);
 console.log(forestMan);
 
+// added some code tests for the SuperHero class ...
 seaMermaid.sayName();
 seaMermaid.maximizeEnergy();
 console.log(seaMermaid);
